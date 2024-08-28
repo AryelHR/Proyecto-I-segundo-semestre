@@ -27,6 +27,9 @@
     <ClCompile Include="Shedule.cpp">
       <Filter>Archivos de encabezado</Filter>
     </ClCompile>
+    <ClCompile Include="Cinema.cpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h">

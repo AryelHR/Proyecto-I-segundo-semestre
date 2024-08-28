@@ -20,7 +20,6 @@ Movie::Movie(string _name, int _year, int _duration, string _country, string _re
 }
 
 Movie::~Movie(){
-	printf("Borrando pelicula: %s\n", name.c_str());
 }
 
 void Movie::displayInfo() const {

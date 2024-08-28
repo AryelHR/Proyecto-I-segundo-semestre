@@ -10,6 +10,5 @@ using namespace std;
 #include "Movies.h"
 #include "TheaterRoom.h"
 #include "Shedule.h"
-#include "Cinema.h"
 
 #endif

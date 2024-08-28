@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Cinema.cpp" />
     <ClCompile Include="Movies.cpp" />
     <ClCompile Include="Proyecto I Segundo Semestre.cpp" />
     <ClCompile Include="Shedule.cpp" />
