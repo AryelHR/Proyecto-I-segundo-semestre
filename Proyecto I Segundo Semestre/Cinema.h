@@ -6,6 +6,7 @@ private:
     Movie** movies;       
     TheaterRoom** rooms;   
     Schedule** schedules;  
+    Reservation* reservation;
     int movieCount;       
     int roomCount;         
     int scheduleCount;    
@@ -36,6 +37,9 @@ public:
     int getRoomCount() const;
     TheaterRoom* getRoom(int index) const; 
 
+    void setCurrentReservation(Reservation* reservation);
+    Reservation* getCurrentReservation() const;
+
     void cinemaCapacity(int _movieCap, int _roomCap, int _scheduleCap);
     void mainMenu();
     void archiving(); 
@@ -43,7 +47,7 @@ public:
     void manageMovies();
     void makeReservation();
     void makeSale();
+    void randomTicket(int& ticket);
 };
-
 
 

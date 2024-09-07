@@ -18,17 +18,17 @@
     <ClCompile Include="Proyecto I Segundo Semestre.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="Movies.cpp">
-      <Filter>Archivos de encabezado</Filter>
+    <ClCompile Include="Cinema.cpp">
+      <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="TheaterRoom.cpp">
-      <Filter>Archivos de encabezado</Filter>
+    <ClCompile Include="Movies.cpp">
+      <Filter>Archivos de origen</Filter>
     </ClCompile>
     <ClCompile Include="Shedule.cpp">
-      <Filter>Archivos de encabezado</Filter>
+      <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="Cinema.cpp">
-      <Filter>Archivos de encabezado</Filter>
+    <ClCompile Include="TheaterRoom.cpp">
+      <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -45,6 +45,9 @@
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="Cinema.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Reservation.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>

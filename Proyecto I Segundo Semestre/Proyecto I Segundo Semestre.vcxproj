@@ -137,6 +137,7 @@
     <ClInclude Include="Cinema.h" />
     <ClInclude Include="header.h" />
     <ClInclude Include="Movies.h" />
+    <ClInclude Include="Reservation.h" />
     <ClInclude Include="Shedule.h" />
     <ClInclude Include="TheaterRoom.h" />
   </ItemGroup>

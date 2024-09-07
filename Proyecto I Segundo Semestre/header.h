@@ -4,11 +4,13 @@
 
 #include <cstdio>
 #include <cstdlib>
+#include <ctime> 
 #include <iostream>
 using namespace std;
 
 #include "Movies.h"
 #include "TheaterRoom.h"
 #include "Shedule.h"
-
+#include "Reservation.h"
 #endif
+

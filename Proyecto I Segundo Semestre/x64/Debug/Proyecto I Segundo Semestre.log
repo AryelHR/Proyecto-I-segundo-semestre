@@ -1,2 +1,24 @@
 ﻿  Cinema.cpp
+C:\Users\andya\OneDrive\Escritorio\UNA\II CICLO 2024\PROGRAMACION I\Proyecto I Segundo Semestre\Proyecto I Segundo Semestre\Reservation.h(31,16): warning C4477: 'printf' : la cadena de formato '%s' requiere un argumento de tipo 'char *', pero el argumento variádico 1 tiene el tipo 'std::string'
+  (compilando archivo de origen "Cinema.cpp")
+  
+C:\Users\andya\OneDrive\Escritorio\UNA\II CICLO 2024\PROGRAMACION I\Proyecto I Segundo Semestre\Proyecto I Segundo Semestre\Reservation.h(33,16): warning C4477: 'printf' : la cadena de formato '%s' requiere un argumento de tipo 'char *', pero el argumento variádico 1 tiene el tipo 'std::string'
+  (compilando archivo de origen "Cinema.cpp")
+  
+C:\Users\andya\OneDrive\Escritorio\UNA\II CICLO 2024\PROGRAMACION I\Proyecto I Segundo Semestre\Proyecto I Segundo Semestre\Cinema.cpp(561,33): warning C4473: "scanf_s": no se pasaron suficientes argumentos para la cadena de formato
+  C:\Users\andya\OneDrive\Escritorio\UNA\II CICLO 2024\PROGRAMACION I\Proyecto I Segundo Semestre\Proyecto I Segundo Semestre\Cinema.cpp(561,33):
+  los marcadores de posición y sus parámetros esperan 2 argumentos variádicos, pero se proporcionaron 1
+  C:\Users\andya\OneDrive\Escritorio\UNA\II CICLO 2024\PROGRAMACION I\Proyecto I Segundo Semestre\Proyecto I Segundo Semestre\Cinema.cpp(561,33):
+  el argumento variádico 2 que falta es requerido por la cadena de formato '%29s'
+  C:\Users\andya\OneDrive\Escritorio\UNA\II CICLO 2024\PROGRAMACION I\Proyecto I Segundo Semestre\Proyecto I Segundo Semestre\Cinema.cpp(561,33):
+  este argumento se utiliza como un tamaño de búfer
+  
+C:\Users\andya\OneDrive\Escritorio\UNA\II CICLO 2024\PROGRAMACION I\Proyecto I Segundo Semestre\Proyecto I Segundo Semestre\Cinema.cpp(563,33): warning C4473: "scanf_s": no se pasaron suficientes argumentos para la cadena de formato
+  C:\Users\andya\OneDrive\Escritorio\UNA\II CICLO 2024\PROGRAMACION I\Proyecto I Segundo Semestre\Proyecto I Segundo Semestre\Cinema.cpp(563,33):
+  los marcadores de posición y sus parámetros esperan 2 argumentos variádicos, pero se proporcionaron 1
+  C:\Users\andya\OneDrive\Escritorio\UNA\II CICLO 2024\PROGRAMACION I\Proyecto I Segundo Semestre\Proyecto I Segundo Semestre\Cinema.cpp(563,33):
+  el argumento variádico 2 que falta es requerido por la cadena de formato '%29s'
+  C:\Users\andya\OneDrive\Escritorio\UNA\II CICLO 2024\PROGRAMACION I\Proyecto I Segundo Semestre\Proyecto I Segundo Semestre\Cinema.cpp(563,33):
+  este argumento se utiliza como un tamaño de búfer
+  
   Proyecto I Segundo Semestre.vcxproj -> C:\Users\andya\OneDrive\Escritorio\UNA\II CICLO 2024\PROGRAMACION I\Proyecto I Segundo Semestre\x64\Debug\Proyecto I Segundo Semestre.exe

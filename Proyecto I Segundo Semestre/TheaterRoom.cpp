@@ -56,7 +56,7 @@ void TheaterRoom::initializeSeats() {
 
 bool TheaterRoom::reserveSeat(int row, int col) {
     if (isSeatAvailable(row, col)) {
-        seats[row][col] = 'R';
+        seats[row][col] = 'I';
         return true;
     }
     return false;
@@ -72,6 +72,9 @@ void TheaterRoom::displaySeats() const {
             }
             else if (seats[i][j] == 'R') {
                 printf("\033[31m[X]\033[0m ");  
+            }
+            else if (seats[i][j] == 'I') {
+                printf("\033[33m[O]\033[0m ");
             }
         }
         printf("\n");
