@@ -43,11 +43,23 @@ public:
     void cinemaCapacity(int _movieCap, int _roomCap, int _scheduleCap);
     void mainMenu();
     void archiving(); 
+
     void maintenance();
-    void manageMovies();
+    void filmManagement();
+    void movieManagement();
+    void roomManagement();
+    void scheduleManagement();
+    void defineCinemaCapacity();
+
     void makeReservation();
+    void makeMovieReservation();
+    void makeScheduleSelection(Movie* selectedMovie);
+    void makeSeatReservation(TheaterRoom* room, int row, int col, Movie* selectedMovie, Schedule* selectedSchedule);
+    bool displaySchedulesForMovie(Movie* selectedMovie);
+
     void makeSale();
     void randomTicket(int& ticket);
+    int getValidatedInput(const char* message);
 };
 
 
