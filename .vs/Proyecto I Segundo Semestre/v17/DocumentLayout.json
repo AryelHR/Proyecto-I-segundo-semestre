@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\andya\\OneDrive\\Escritorio\\UNA\\II CICLO 2024\\PROGRAMACION I\\Proyecto I Segundo Semestre\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{885D9939-934F-43A0-823B-83CA1B3CB35E}|Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre.vcxproj|C:\\Users\\andya\\OneDrive\\Escritorio\\UNA\\II CICLO 2024\\PROGRAMACION I\\Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre\\Cinema.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{885D9939-934F-43A0-823B-83CA1B3CB35E}|Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre.vcxproj|solutionrelative:Proyecto I Segundo Semestre\\Cinema.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{885D9939-934F-43A0-823B-83CA1B3CB35E}|Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre.vcxproj|C:\\Users\\andya\\OneDrive\\Escritorio\\UNA\\II CICLO 2024\\PROGRAMACION I\\Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre\\Reservation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{885D9939-934F-43A0-823B-83CA1B3CB35E}|Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre.vcxproj|solutionrelative:Proyecto I Segundo Semestre\\Reservation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{885D9939-934F-43A0-823B-83CA1B3CB35E}|Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre.vcxproj|C:\\Users\\andya\\OneDrive\\Escritorio\\UNA\\II CICLO 2024\\PROGRAMACION I\\Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre\\Shedule.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{885D9939-934F-43A0-823B-83CA1B3CB35E}|Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre.vcxproj|solutionrelative:Proyecto I Segundo Semestre\\Shedule.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{885D9939-934F-43A0-823B-83CA1B3CB35E}|Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre.vcxproj|C:\\Users\\andya\\OneDrive\\Escritorio\\UNA\\II CICLO 2024\\PROGRAMACION I\\Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre\\TheaterRoom.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{885D9939-934F-43A0-823B-83CA1B3CB35E}|Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre.vcxproj|solutionrelative:Proyecto I Segundo Semestre\\TheaterRoom.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{885D9939-934F-43A0-823B-83CA1B3CB35E}|Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre.vcxproj|C:\\Users\\andya\\OneDrive\\Escritorio\\UNA\\II CICLO 2024\\PROGRAMACION I\\Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre\\Shedule.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{885D9939-934F-43A0-823B-83CA1B3CB35E}|Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre.vcxproj|solutionrelative:Proyecto I Segundo Semestre\\Shedule.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{885D9939-934F-43A0-823B-83CA1B3CB35E}|Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre.vcxproj|C:\\Users\\andya\\OneDrive\\Escritorio\\UNA\\II CICLO 2024\\PROGRAMACION I\\Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre\\TheaterRoom.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{885D9939-934F-43A0-823B-83CA1B3CB35E}|Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre.vcxproj|solutionrelative:Proyecto I Segundo Semestre\\TheaterRoom.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{885D9939-934F-43A0-823B-83CA1B3CB35E}|Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre.vcxproj|C:\\Users\\andya\\OneDrive\\Escritorio\\UNA\\II CICLO 2024\\PROGRAMACION I\\Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre\\Cinema.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{885D9939-934F-43A0-823B-83CA1B3CB35E}|Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre.vcxproj|solutionrelative:Proyecto I Segundo Semestre\\Cinema.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{885D9939-934F-43A0-823B-83CA1B3CB35E}|Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre.vcxproj|C:\\Users\\andya\\OneDrive\\Escritorio\\UNA\\II CICLO 2024\\PROGRAMACION I\\Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre\\Cinema.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{885D9939-934F-43A0-823B-83CA1B3CB35E}|Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre.vcxproj|solutionrelative:Proyecto I Segundo Semestre\\Cinema.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{885D9939-934F-43A0-823B-83CA1B3CB35E}|Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre.vcxproj|C:\\Users\\andya\\OneDrive\\Escritorio\\UNA\\II CICLO 2024\\PROGRAMACION I\\Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{885D9939-934F-43A0-823B-83CA1B3CB35E}|Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre.vcxproj|solutionrelative:Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{885D9939-934F-43A0-823B-83CA1B3CB35E}|Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre.vcxproj|C:\\Users\\andya\\OneDrive\\Escritorio\\UNA\\II CICLO 2024\\PROGRAMACION I\\Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre\\Movies.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -27,24 +39,12 @@
       "RelativeMoniker": "D:0:0:{885D9939-934F-43A0-823B-83CA1B3CB35E}|Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre.vcxproj|solutionrelative:Proyecto I Segundo Semestre\\Movies.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{885D9939-934F-43A0-823B-83CA1B3CB35E}|Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre.vcxproj|C:\\Users\\andya\\OneDrive\\Escritorio\\UNA\\II CICLO 2024\\PROGRAMACION I\\Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre\\TheaterRoom.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{885D9939-934F-43A0-823B-83CA1B3CB35E}|Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre.vcxproj|solutionrelative:Proyecto I Segundo Semestre\\TheaterRoom.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{885D9939-934F-43A0-823B-83CA1B3CB35E}|Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre.vcxproj|C:\\Users\\andya\\OneDrive\\Escritorio\\UNA\\II CICLO 2024\\PROGRAMACION I\\Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre\\TheaterRoom.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{885D9939-934F-43A0-823B-83CA1B3CB35E}|Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre.vcxproj|solutionrelative:Proyecto I Segundo Semestre\\TheaterRoom.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{885D9939-934F-43A0-823B-83CA1B3CB35E}|Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre.vcxproj|C:\\Users\\andya\\OneDrive\\Escritorio\\UNA\\II CICLO 2024\\PROGRAMACION I\\Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre\\header.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{885D9939-934F-43A0-823B-83CA1B3CB35E}|Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre.vcxproj|solutionrelative:Proyecto I Segundo Semestre\\header.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{885D9939-934F-43A0-823B-83CA1B3CB35E}|Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre.vcxproj|C:\\Users\\andya\\OneDrive\\Escritorio\\UNA\\II CICLO 2024\\PROGRAMACION I\\Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre\\Reservation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{885D9939-934F-43A0-823B-83CA1B3CB35E}|Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre.vcxproj|solutionrelative:Proyecto I Segundo Semestre\\Reservation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{885D9939-934F-43A0-823B-83CA1B3CB35E}|Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre.vcxproj|C:\\Users\\andya\\OneDrive\\Escritorio\\UNA\\II CICLO 2024\\PROGRAMACION I\\Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre\\Cinema.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{885D9939-934F-43A0-823B-83CA1B3CB35E}|Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre.vcxproj|solutionrelative:Proyecto I Segundo Semestre\\Cinema.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{885D9939-934F-43A0-823B-83CA1B3CB35E}|Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre.vcxproj|C:\\Users\\andya\\OneDrive\\Escritorio\\UNA\\II CICLO 2024\\PROGRAMACION I\\Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{885D9939-934F-43A0-823B-83CA1B3CB35E}|Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre.vcxproj|solutionrelative:Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,17 +54,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Cinema.cpp",
               "DocumentMoniker": "C:\\Users\\andya\\OneDrive\\Escritorio\\UNA\\II CICLO 2024\\PROGRAMACION I\\Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre\\Cinema.cpp",
               "RelativeDocumentMoniker": "Proyecto I Segundo Semestre\\Cinema.cpp",
               "ToolTip": "C:\\Users\\andya\\OneDrive\\Escritorio\\UNA\\II CICLO 2024\\PROGRAMACION I\\Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre\\Cinema.cpp",
               "RelativeToolTip": "Proyecto I Segundo Semestre\\Cinema.cpp",
-              "ViewState": "AQIAAD4BAAAAAAAAAAAQwN0BAAAZAAAA",
+              "ViewState": "AQIAALMBAAAAAAAAAAAAAMYBAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-08-24T23:21:29.896Z",
               "IsPinned": true,
@@ -72,43 +72,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 5,
               "Title": "Cinema.h",
               "DocumentMoniker": "C:\\Users\\andya\\OneDrive\\Escritorio\\UNA\\II CICLO 2024\\PROGRAMACION I\\Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre\\Cinema.h",
               "RelativeDocumentMoniker": "Proyecto I Segundo Semestre\\Cinema.h",
               "ToolTip": "C:\\Users\\andya\\OneDrive\\Escritorio\\UNA\\II CICLO 2024\\PROGRAMACION I\\Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre\\Cinema.h",
               "RelativeToolTip": "Proyecto I Segundo Semestre\\Cinema.h",
-              "ViewState": "AQIAABgAAAAAAAAAAAAQwCsAAAAEAAAA",
+              "ViewState": "AQIAACYAAAAAAAAAAAAAADcAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-08-18T00:23:33.456Z"
+              "WhenOpened": "2024-08-18T00:23:33.456Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "Reservation.h",
               "DocumentMoniker": "C:\\Users\\andya\\OneDrive\\Escritorio\\UNA\\II CICLO 2024\\PROGRAMACION I\\Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre\\Reservation.h",
               "RelativeDocumentMoniker": "Proyecto I Segundo Semestre\\Reservation.h",
               "ToolTip": "C:\\Users\\andya\\OneDrive\\Escritorio\\UNA\\II CICLO 2024\\PROGRAMACION I\\Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre\\Reservation.h",
               "RelativeToolTip": "Proyecto I Segundo Semestre\\Reservation.h",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAACMAAAAdAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACQAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-04T04:25:19.169Z"
+              "WhenOpened": "2024-09-04T04:25:19.169Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Shedule.h",
               "DocumentMoniker": "C:\\Users\\andya\\OneDrive\\Escritorio\\UNA\\II CICLO 2024\\PROGRAMACION I\\Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre\\Shedule.h",
               "RelativeDocumentMoniker": "Proyecto I Segundo Semestre\\Shedule.h",
               "ToolTip": "C:\\Users\\andya\\OneDrive\\Escritorio\\UNA\\II CICLO 2024\\PROGRAMACION I\\Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre\\Shedule.h",
               "RelativeToolTip": "Proyecto I Segundo Semestre\\Shedule.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAAAQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-08-24T16:22:44.52Z"
+              "WhenOpened": "2024-08-24T16:22:44.52Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "header.h",
               "DocumentMoniker": "C:\\Users\\andya\\OneDrive\\Escritorio\\UNA\\II CICLO 2024\\PROGRAMACION I\\Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre\\header.h",
               "RelativeDocumentMoniker": "Proyecto I Segundo Semestre\\header.h",
@@ -120,27 +123,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "TheaterRoom.h",
               "DocumentMoniker": "C:\\Users\\andya\\OneDrive\\Escritorio\\UNA\\II CICLO 2024\\PROGRAMACION I\\Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre\\TheaterRoom.h",
               "RelativeDocumentMoniker": "Proyecto I Segundo Semestre\\TheaterRoom.h",
               "ToolTip": "C:\\Users\\andya\\OneDrive\\Escritorio\\UNA\\II CICLO 2024\\PROGRAMACION I\\Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre\\TheaterRoom.h",
               "RelativeToolTip": "Proyecto I Segundo Semestre\\TheaterRoom.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAANAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAACMAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-08-24T22:55:30.717Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "TheaterRoom.cpp",
               "DocumentMoniker": "C:\\Users\\andya\\OneDrive\\Escritorio\\UNA\\II CICLO 2024\\PROGRAMACION I\\Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre\\TheaterRoom.cpp",
               "RelativeDocumentMoniker": "Proyecto I Segundo Semestre\\TheaterRoom.cpp",
               "ToolTip": "C:\\Users\\andya\\OneDrive\\Escritorio\\UNA\\II CICLO 2024\\PROGRAMACION I\\Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre\\TheaterRoom.cpp",
               "RelativeToolTip": "Proyecto I Segundo Semestre\\TheaterRoom.cpp",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAlwDcAAAAAAAAA",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAAAAsAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-08-24T22:44:49.062Z"
+              "WhenOpened": "2024-08-24T22:44:49.062Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -150,26 +154,26 @@
               "RelativeDocumentMoniker": "Proyecto I Segundo Semestre\\Shedule.cpp",
               "ToolTip": "C:\\Users\\andya\\OneDrive\\Escritorio\\UNA\\II CICLO 2024\\PROGRAMACION I\\Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre\\Shedule.cpp",
               "RelativeToolTip": "Proyecto I Segundo Semestre\\Shedule.cpp",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAADMAAAAvAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAEgAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-01T20:23:56.215Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Movies.cpp",
               "DocumentMoniker": "C:\\Users\\andya\\OneDrive\\Escritorio\\UNA\\II CICLO 2024\\PROGRAMACION I\\Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre\\Movies.cpp",
               "RelativeDocumentMoniker": "Proyecto I Segundo Semestre\\Movies.cpp",
               "ToolTip": "C:\\Users\\andya\\OneDrive\\Escritorio\\UNA\\II CICLO 2024\\PROGRAMACION I\\Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre\\Movies.cpp",
               "RelativeToolTip": "Proyecto I Segundo Semestre\\Movies.cpp",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAwBgAAAANAAAA",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwBgAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-08-24T18:04:43.901Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Movies.h",
               "DocumentMoniker": "C:\\Users\\andya\\OneDrive\\Escritorio\\UNA\\II CICLO 2024\\PROGRAMACION I\\Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre\\Movies.h",
               "RelativeDocumentMoniker": "Proyecto I Segundo Semestre\\Movies.h",
@@ -181,7 +185,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 6,
               "Title": "Proyecto I Segundo Semestre.cpp",
               "DocumentMoniker": "C:\\Users\\andya\\OneDrive\\Escritorio\\UNA\\II CICLO 2024\\PROGRAMACION I\\Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre.cpp",
               "RelativeDocumentMoniker": "Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre.cpp",
@@ -189,7 +193,8 @@
               "RelativeToolTip": "Proyecto I Segundo Semestre\\Proyecto I Segundo Semestre.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-08-16T23:01:34.297Z"
+              "WhenOpened": "2024-08-16T23:01:34.297Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -54,7 +54,7 @@ public:
     void makeReservation();
     void makeMovieReservation();
     void makeScheduleSelection(Movie* selectedMovie);
-    void makeSeatReservation(TheaterRoom* room, int row, int col, Movie* selectedMovie, Schedule* selectedSchedule);
+    void makeSeatReservation(TheaterRoom* room, int* rows, int* cols, int seatCount, Movie* selectedMovie, Schedule* selectedSchedule);
     bool displaySchedulesForMovie(Movie* selectedMovie);
 
     void makeSale();

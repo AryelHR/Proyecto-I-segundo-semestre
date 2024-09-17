@@ -32,8 +32,8 @@ public:
 	void setCols(int _cols);
 	int getCols()const;
 
-
-	void initializeSeats();
+	void initializeNullSeats();
+	void initializeRandomSeats();
 	bool reserveSeat(int row, int col);
 	void displaySeats() const;
 	bool isSeatAvailable(int row, int col) const;

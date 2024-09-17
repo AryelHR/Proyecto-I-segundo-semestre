@@ -9,7 +9,7 @@ TheaterRoom::TheaterRoom() {
     price = 0.0;
     rows = 0;
     cols = 0;
-    initializeSeats();
+    initializeNullSeats();
 }
 
 TheaterRoom::TheaterRoom(int _number, int _rows, int _cols, double _price) {
@@ -18,7 +18,7 @@ TheaterRoom::TheaterRoom(int _number, int _rows, int _cols, double _price) {
     price = _price;
     rows = _rows;
     cols = _cols;
-    initializeSeats();
+    initializeNullSeats();
 }
 
 TheaterRoom::~TheaterRoom() {
@@ -39,7 +39,16 @@ int TheaterRoom::getRows() const { return rows; }
 void TheaterRoom::setCols(int _cols) { cols = _cols; }
 int TheaterRoom::getCols() const { return cols; }
 
-void TheaterRoom::initializeSeats() {
+
+void TheaterRoom::initializeNullSeats(){
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols;j++) {
+            seats[i][j] = 0;
+        }
+    }
+}
+
+void TheaterRoom::initializeRandomSeats() {
     srand((unsigned)time(0));  
 
     for (int i = 0; i < rows; i++) {
@@ -67,7 +76,10 @@ void TheaterRoom::displaySeats() const {
 
     for (int i = 0; i < rows; ++i) {
         for (int j = 0; j < cols; ++j) {
-            if (seats[i][j] == 'A') {
+            if (seats[i][j] == 0) {
+                printf("[ ]");
+            }
+            else if (seats[i][j] == 'A') {
                 printf("\033[32m[ ]\033[0m ");  
             }
             else if (seats[i][j] == 'R') {

@@ -143,7 +143,7 @@ void Cinema::mainMenu() {
         printf("\t3. Reservas\n");
         printf("\t4. Ventas\n");
 
-        mainMenuOption = getValidatedInput("Elija una opcion");
+        mainMenuOption = getValidatedInput("Elija una opcion: ");
         switch (mainMenuOption) {
         case 1:
             archiving();
@@ -173,7 +173,7 @@ void Cinema::archiving() {
         printf("1. Creador\n");
         printf("2. Menu principal\n");
         printf("3. Salir\n");
-        option = getValidatedInput("Elija una opcion");
+        option = getValidatedInput("Elija una opcion: ");
 
         switch (option) {
         case 1:
@@ -263,7 +263,7 @@ void Cinema::filmManagement() {
         printf("4. Anadir Horario\n");
         printf("5. Volver al Menu Principal\n");
 
-        option = getValidatedInput("Elija una opcion");
+        option = getValidatedInput("Elija una opcion: ");
 
         switch (option) {
         case 1: {
@@ -420,11 +420,6 @@ void Cinema::makeMovieReservation() {
     int movieReservation;
     bool found = false;
 
-    system("cls");
-    printf("\033[33mNota: Una vez hecha la reserva debe ir al apartado de ventas. Solo puede tener un ticket a la vez.\n\033[0m ");
-    system("pause");
-    system("cls");
-
     displayMovies();
     printf("Ingrese el numero de pelicula para la reserva: ");
     scanf_s("%d", &movieReservation);
@@ -448,7 +443,7 @@ void Cinema::makeMovieReservation() {
 }
 
 void Cinema::makeScheduleSelection(Movie* selectedMovie) {
-    int scheduleReservation, row = 0, col = 0;
+    int scheduleReservation, seatCount = 0;
 
     printf("Ingrese el numero de horario: ");
     scanf_s("%d", &scheduleReservation);
@@ -456,38 +451,66 @@ void Cinema::makeScheduleSelection(Movie* selectedMovie) {
 
     if (scheduleReservation >= 0 && scheduleReservation < scheduleCount) {
         Schedule* selectedSchedule = schedules[scheduleReservation];
+
+        if (!selectedSchedule->canMakeReservation()) {
+            printf("\033[31mNo puede hacer una reserva para una película que comienza en menos de 30 minutos.\n\033[0m");
+            system("pause");
+            return;
+        }
+
         TheaterRoom* room = selectedSchedule->getTheaterRoom();
 
         room->displaySeats();
-        printf("Elija la fila para su asiento: ");
-        scanf_s("%d", &row);
-        printf("Elija la columna para su asiento: ");
-        scanf_s("%d", &col);
+        printf("Cuantos asientos desea reservar?: ");
+        scanf_s("%d", &seatCount);
 
-        makeSeatReservation(room, row, col, selectedMovie, selectedSchedule);
+        int* rows = new int[seatCount];
+        int* cols = new int[seatCount];
+
+        for (int i = 0; i < seatCount; i++) {
+            printf("Elija la fila para el asiento %d: ", i + 1);
+            scanf_s("%d", &rows[i]);
+            printf("Elija la columna para el asiento %d: ", i + 1);
+            scanf_s("%d", &cols[i]);
+        }
+
+        bool allAvailable = true;
+        for (int i = 0; i < seatCount; i++) {
+            if (!room->isSeatAvailable(rows[i] - 1, cols[i] - 1)) {
+                allAvailable = false;
+                break;
+            }
+        }
+
+        if (allAvailable) {
+            makeSeatReservation(room, rows, cols, seatCount, selectedMovie, selectedSchedule);
+        }
+        else {
+            printf("\033[31mUno o mas asientos no estan disponibles. Intente de nuevo.\n\033[0m");
+        }
+
+        delete[] rows;
+        delete[] cols;
     }
     else {
         printf("\033[31mNumero de horario invalido.\n\033[0m");
     }
 }
 
-void Cinema::makeSeatReservation(TheaterRoom* room, int row, int col, Movie* selectedMovie, Schedule* selectedSchedule) {
-    if (room->isSeatAvailable(row - 1, col - 1)) {
-        int ticket;
-        randomTicket(ticket);
-        room->reserveSeat(row - 1, col - 1);
+void Cinema::makeSeatReservation(TheaterRoom* room, int* rows, int* cols, int seatCount, Movie* selectedMovie, Schedule* selectedSchedule) {
+    int ticket;
+    randomTicket(ticket);
 
-        Reservation* reservation = new Reservation(selectedMovie, room, selectedSchedule, row, col, ticket);
-        setCurrentReservation(reservation);
+    for (int i = 0; i < seatCount; i++) {
+        room->reserveSeat(rows[i] - 1, cols[i] - 1);
+    }
 
-        printf("\033[32mReserva exitosa. Su numero de ticket es: %d\n\033[0m", ticket);
-        printf("\033[33mNota: Debe recordar su Numero de Ticket. Es necesario en el apartado de venta.\n\033[0m");
-        system("pause");
-    }
-    else {
-        printf("\033[31mAsiento no disponible. Intente de nuevo.\n\033[0m");
-        system("pause");
-    }
+    Reservation* reservation = new Reservation(selectedMovie, room, selectedSchedule, rows, cols, seatCount, ticket);
+    setCurrentReservation(reservation);
+
+    printf("\033[32mReserva exitosa. Su numero de ticket es: %d\n\033[0m", ticket);
+    printf("\033[33mNota: Debe recordar su Numero de Ticket. Es necesario en el apartado de venta.\n\033[0m");
+    system("pause");
 }
 
 bool Cinema::displaySchedulesForMovie(Movie* selectedMovie) {
@@ -504,9 +527,9 @@ bool Cinema::displaySchedulesForMovie(Movie* selectedMovie) {
 
 void Cinema::makeSale() {
     int option = 0;
-    int ticketCount;
+    int ticketNumber;
     char ID[30], cardNumber[30];
-    
+
     do {
         system("cls");
 
@@ -519,18 +542,18 @@ void Cinema::makeSale() {
         case 1:
             system("cls");
             printf("Ingrese el numero de ticket: ");
-            if (scanf_s("%d", &ticketCount) != 1) {
+            if (scanf_s("%d", &ticketNumber) != 1) {
                 printf("Error: Por favor ingrese un numero valido.\n");
                 while (getchar() != '\n');
             }
             else {
-                if (ticketCount == reservation->getTicketNumber()) {
+                if (ticketNumber == reservation->getTicketNumber()) {
                     reservation->displayReservation();
                     printf("Se procedera a cancelar la transaccion\n");
                     printf("Indique su cedula: ");
-                    scanf_s("%29s", &ID);
+                    scanf_s("%29s", ID);
                     printf("Indique su numero de Tarjeta: ");
-                    scanf_s("%29s", &cardNumber);
+                    scanf_s("%29s", cardNumber);
 
                     printf("\033[32mLa venta se hizo correctamente. Gracias por visitar Nueva Cinema.\n\033[0m");
                 }

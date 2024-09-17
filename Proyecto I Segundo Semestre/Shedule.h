@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include <cstdio>
+#include <ctime>
 
 using namespace std;
 
@@ -37,6 +38,11 @@ public:
     string getEndTime() const;
 
     void displaySchedule() const;
+
+    string getCurrentTime();
+    int calculateTimeDifference(const string& time1, const string& time2);
+    bool canMakeReservation();
+    void calculateEndTime();
 };
 
 
