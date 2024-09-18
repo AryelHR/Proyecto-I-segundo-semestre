@@ -1,2 +1,53 @@
-﻿  Shedule.cpp
-C:\Users\andya\OneDrive\Escritorio\UNA\II CICLO 2024\PROGRAMACION I\Proyecto I Segundo Semestre\Proyecto I Segundo Semestre\Shedule.cpp(64,18): error C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+﻿  Cinema.cpp
+C:\Users\andya\OneDrive\Escritorio\UNA\II CICLO 2024\PROGRAMACION I\Proyecto I Segundo Semestre\Proyecto I Segundo Semestre\Format.h(61,20): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "Cinema.cpp")
+  
+C:\Users\andya\OneDrive\Escritorio\UNA\II CICLO 2024\PROGRAMACION I\Proyecto I Segundo Semestre\Proyecto I Segundo Semestre\Format.h(80,24): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "Cinema.cpp")
+  
+C:\Users\andya\OneDrive\Escritorio\UNA\II CICLO 2024\PROGRAMACION I\Proyecto I Segundo Semestre\Proyecto I Segundo Semestre\Format.h(144,27): warning C4309: 'argumento': truncamiento de valor constante
+  (compilando archivo de origen "Cinema.cpp")
+  
+C:\Users\andya\OneDrive\Escritorio\UNA\II CICLO 2024\PROGRAMACION I\Proyecto I Segundo Semestre\Proyecto I Segundo Semestre\Format.h(155,23): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "Cinema.cpp")
+  
+C:\Users\andya\OneDrive\Escritorio\UNA\II CICLO 2024\PROGRAMACION I\Proyecto I Segundo Semestre\Proyecto I Segundo Semestre\Format.h(157,28): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "Cinema.cpp")
+  
+C:\Users\andya\OneDrive\Escritorio\UNA\II CICLO 2024\PROGRAMACION I\Proyecto I Segundo Semestre\Proyecto I Segundo Semestre\Format.h(175,49): warning C4267: 'argumento': conversión de 'size_t' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "Cinema.cpp")
+  
+C:\Users\andya\OneDrive\Escritorio\UNA\II CICLO 2024\PROGRAMACION I\Proyecto I Segundo Semestre\Proyecto I Segundo Semestre\Format.h(188,60): warning C4267: 'argumento': conversión de 'size_t' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "Cinema.cpp")
+  
+C:\Users\andya\OneDrive\Escritorio\UNA\II CICLO 2024\PROGRAMACION I\Proyecto I Segundo Semestre\Proyecto I Segundo Semestre\Format.h(202,25): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "Cinema.cpp")
+  
+C:\Users\andya\OneDrive\Escritorio\UNA\II CICLO 2024\PROGRAMACION I\Proyecto I Segundo Semestre\Proyecto I Segundo Semestre\Cinema.cpp(605,23): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+  Proyecto I Segundo Semestre.cpp
+C:\Users\andya\OneDrive\Escritorio\UNA\II CICLO 2024\PROGRAMACION I\Proyecto I Segundo Semestre\Proyecto I Segundo Semestre\Format.h(61,20): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "Proyecto%20I%20Segundo%20Semestre.cpp")
+  
+C:\Users\andya\OneDrive\Escritorio\UNA\II CICLO 2024\PROGRAMACION I\Proyecto I Segundo Semestre\Proyecto I Segundo Semestre\Format.h(80,24): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "Proyecto%20I%20Segundo%20Semestre.cpp")
+  
+C:\Users\andya\OneDrive\Escritorio\UNA\II CICLO 2024\PROGRAMACION I\Proyecto I Segundo Semestre\Proyecto I Segundo Semestre\Format.h(144,27): warning C4309: 'argumento': truncamiento de valor constante
+  (compilando archivo de origen "Proyecto%20I%20Segundo%20Semestre.cpp")
+  
+C:\Users\andya\OneDrive\Escritorio\UNA\II CICLO 2024\PROGRAMACION I\Proyecto I Segundo Semestre\Proyecto I Segundo Semestre\Format.h(155,23): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "Proyecto%20I%20Segundo%20Semestre.cpp")
+  
+C:\Users\andya\OneDrive\Escritorio\UNA\II CICLO 2024\PROGRAMACION I\Proyecto I Segundo Semestre\Proyecto I Segundo Semestre\Format.h(157,28): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "Proyecto%20I%20Segundo%20Semestre.cpp")
+  
+C:\Users\andya\OneDrive\Escritorio\UNA\II CICLO 2024\PROGRAMACION I\Proyecto I Segundo Semestre\Proyecto I Segundo Semestre\Format.h(175,49): warning C4267: 'argumento': conversión de 'size_t' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "Proyecto%20I%20Segundo%20Semestre.cpp")
+  
+C:\Users\andya\OneDrive\Escritorio\UNA\II CICLO 2024\PROGRAMACION I\Proyecto I Segundo Semestre\Proyecto I Segundo Semestre\Format.h(188,60): warning C4267: 'argumento': conversión de 'size_t' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "Proyecto%20I%20Segundo%20Semestre.cpp")
+  
+C:\Users\andya\OneDrive\Escritorio\UNA\II CICLO 2024\PROGRAMACION I\Proyecto I Segundo Semestre\Proyecto I Segundo Semestre\Format.h(202,25): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "Proyecto%20I%20Segundo%20Semestre.cpp")
+  
+  Generando código...
+  Proyecto I Segundo Semestre.vcxproj -> C:\Users\andya\OneDrive\Escritorio\UNA\II CICLO 2024\PROGRAMACION I\Proyecto I Segundo Semestre\x64\Debug\Proyecto I Segundo Semestre.exe

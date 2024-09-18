@@ -135,6 +135,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cinema.h" />
+    <ClInclude Include="Format.h" />
     <ClInclude Include="header.h" />
     <ClInclude Include="Movies.h" />
     <ClInclude Include="Reservation.h" />

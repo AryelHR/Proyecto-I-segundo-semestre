@@ -1,4 +1,4 @@
-#include "Cinema.h"
+ï»¿#include "Cinema.h"
 
 Cinema::Cinema() {
     movies = nullptr;
@@ -8,6 +8,7 @@ Cinema::Cinema() {
     roomCount = 0;
     scheduleCount = 0;
     exit = false;
+    formato = Formato();
 }
 
 Cinema::~Cinema() {
@@ -66,7 +67,7 @@ void Cinema::displayRooms() const {
 void Cinema::addSchedule(const Schedule& schedule) {
     if (scheduleCount < scheduleCapacity) {
         schedules[scheduleCount] = new Schedule(schedule);
-        scheduleCount++;
+        scheduleCount ++;
 
         printf("\033[34mHorario creado correctamente.\n\033[0m ");
     }
@@ -75,7 +76,7 @@ void Cinema::addSchedule(const Schedule& schedule) {
     }
 }
 
-void Cinema::displaySchedules() const {
+void Cinema::displaySchedules() const{
     for (int i = 0; i < scheduleCount; ++i) {
         printf("\n");
         printf("Horario %d:\n", i + 1);
@@ -105,10 +106,10 @@ TheaterRoom* Cinema::getRoom(int index) const {
     return nullptr;
 }
 
-void Cinema::setCurrentReservation(Reservation* _reservation){
+void Cinema::setCurrentReservation(Reservation* _reservation) {
     reservation = _reservation;
 }
-Reservation* Cinema::getCurrentReservation() const{
+Reservation* Cinema::getCurrentReservation() const {
     return reservation;
 }
 
@@ -131,17 +132,20 @@ void Cinema::cinemaCapacity(int _movieCap, int _roomCap, int _scheduleCap) {
 }
 
 void Cinema::mainMenu() {
+    formato.imprimirTodo();
+    system("cls");
+
     int mainMenuOption = 0;
 
     do {
         system("cls");
 
-        printf("\033[34mBIENVENIDO A NUEVACINEMA\n\033[0m ");
+        formato.imprimirTitulo("BIENVENIDO A NUEVACINEMA");
 
-        printf("\t1. Archivo\n");
-        printf("\t2. Mantenimiento\n");
-        printf("\t3. Reservas\n");
-        printf("\t4. Ventas\n");
+        printf("1. Archivo\n");
+        printf("2. Mantenimiento\n");
+        printf("3. Reservas\n");
+        printf("4. Ventas\n");
 
         mainMenuOption = getValidatedInput("Elija una opcion: ");
         switch (mainMenuOption) {
@@ -169,7 +173,7 @@ void Cinema::archiving() {
     int option = 0;
     do {
         system("cls");
-
+        formato.imprimirTitulo("ARCHIVO");
         printf("1. Creador\n");
         printf("2. Menu principal\n");
         printf("3. Salir\n");
@@ -210,7 +214,7 @@ void Cinema::maintenance() {
     do {
         system("cls");
 
-        printf("MANTENIMIENTO\n");
+        formato.imprimirTitulo("MANTENIMIENTO");
         printf("1. Mostrar Detalles de las Peliculas\n");
         printf("2. Mostrar Detalles de las Salas\n");
         printf("3. Mostrar Horarios\n");
@@ -256,7 +260,7 @@ void Cinema::filmManagement() {
     do {
         system("cls");
 
-        printf("GESTION DEL CINE\n");
+        formato.imprimirTitulo("GESTION DEL CINE");
         printf("1. Definir espacio del Cine\n");
         printf("2. Anadir Pelicula\n");
         printf("3. Anadir Sala\n");
@@ -294,7 +298,7 @@ void Cinema::filmManagement() {
     } while (true);
 }
 
-void Cinema::movieManagement(){
+void Cinema::movieManagement() {
     system("cls");
     string name;
     int year, duration;
@@ -367,10 +371,11 @@ void Cinema::scheduleManagement() {
     printf("Ingrese la hora de inicio (HH:MM): ");
     getline(cin, startTime);
 
-    printf("Ingrese la hora de fin (HH:MM): ");
+    printf("Ingrese la hora de fin, tomando en cuenta la duracion de la pelicula (%d min) (HH:MM): ", getMovie(movieIndex)->getDuration());
     getline(cin, endTime);
 
-    Schedule newSchedule(getMovie(movieIndex), getRoom(roomIndex), day, startTime, endTime);
+    TheaterRoom selectedRoom = *getRoom(roomIndex);
+    Schedule newSchedule(getMovie(movieIndex), selectedRoom, day, startTime, endTime);
     this->addSchedule(newSchedule);
 }
 
@@ -397,7 +402,7 @@ void Cinema::makeReservation() {
 
     do {
         system("cls");
-        printf("RESERVAS\n");
+        formato.imprimirTitulo("RESERVA");
         printf("1. Mostrar Peliculas\n");
         printf("2. Volver al Menu Principal\n");
 
@@ -419,7 +424,7 @@ void Cinema::makeReservation() {
 void Cinema::makeMovieReservation() {
     int movieReservation;
     bool found = false;
-
+    system("cls");
     displayMovies();
     printf("Ingrese el numero de pelicula para la reserva: ");
     scanf_s("%d", &movieReservation);
@@ -444,7 +449,6 @@ void Cinema::makeMovieReservation() {
 
 void Cinema::makeScheduleSelection(Movie* selectedMovie) {
     int scheduleReservation, seatCount = 0;
-
     printf("Ingrese el numero de horario: ");
     scanf_s("%d", &scheduleReservation);
     scheduleReservation--;
@@ -453,14 +457,14 @@ void Cinema::makeScheduleSelection(Movie* selectedMovie) {
         Schedule* selectedSchedule = schedules[scheduleReservation];
 
         if (!selectedSchedule->canMakeReservation()) {
-            printf("\033[31mNo puede hacer una reserva para una película que comienza en menos de 30 minutos.\n\033[0m");
+            printf("\033[31mNo puede hacer una reserva para una pelicula que comienza en menos de 30 minutos.\n\033[0m");
             system("pause");
             return;
         }
 
-        TheaterRoom* room = selectedSchedule->getTheaterRoom();
-
-        room->displaySeats();
+        TheaterRoom& room = selectedSchedule->getTheaterRoom();
+        system("cls");
+        room.displaySeats();
         printf("Cuantos asientos desea reservar?: ");
         scanf_s("%d", &seatCount);
 
@@ -476,14 +480,14 @@ void Cinema::makeScheduleSelection(Movie* selectedMovie) {
 
         bool allAvailable = true;
         for (int i = 0; i < seatCount; i++) {
-            if (!room->isSeatAvailable(rows[i] - 1, cols[i] - 1)) {
+            if (!room.isSeatAvailable(rows[i] - 1, cols[i] - 1)) {
                 allAvailable = false;
                 break;
             }
         }
 
         if (allAvailable) {
-            makeSeatReservation(room, rows, cols, seatCount, selectedMovie, selectedSchedule);
+            makeSeatReservation(&room, rows, cols, seatCount, selectedMovie, selectedSchedule);
         }
         else {
             printf("\033[31mUno o mas asientos no estan disponibles. Intente de nuevo.\n\033[0m");
@@ -533,8 +537,8 @@ void Cinema::makeSale() {
     do {
         system("cls");
 
-        printf("VENTAS\n");
-        printf("1. Cancelar Reserva\n");
+        formato.imprimirTitulo("VENTA");
+        printf("1. Procesar Venta\n");
         printf("2. Volver al Menu Principal\n");
         option = getValidatedInput("Elija una opcion: ");
 
@@ -549,13 +553,19 @@ void Cinema::makeSale() {
             else {
                 if (ticketNumber == reservation->getTicketNumber()) {
                     reservation->displayReservation();
-                    printf("Se procedera a cancelar la transaccion\n");
+                    printf("Se procedera a procesar la venta\n");
                     printf("Indique su cedula: ");
-                    scanf_s("%29s", ID);
+                    cin.ignore();
+                    cin.getline(ID, 30);
                     printf("Indique su numero de Tarjeta: ");
-                    scanf_s("%29s", cardNumber);
+                    cin.getline(cardNumber, 30);
 
-                    printf("\033[32mLa venta se hizo correctamente. Gracias por visitar Nueva Cinema.\n\033[0m");
+                    printInvoice(ID, reservation);
+
+                    printf("\033[32mLa venta se proceso correctamente. Gracias por visitar Nueva Cinema.\n\033[0m");
+                }
+                else {
+                    printf("\033[31mNumero de ticket no encontrado.\n\033[0m");
                 }
             }
             system("pause");
@@ -571,12 +581,38 @@ void Cinema::makeSale() {
     } while (option != 2);
 }
 
-void Cinema::randomTicket(int &ticket){
+void Cinema::printInvoice(const char* ID, Reservation* reservation) {
+    system("cls");
+    formato.imprimirTitulo("FACTURA - NUEVA CINEMA");
+
+    printf("Numero de Cedula: %s\n", ID);
+    printf("Pelicula: %s\n", reservation->getMovie()->getName().c_str());
+    printf("Fecha: %s\n", reservation->getSchedule()->getDay().c_str());
+    printf("Hora: %s\n", reservation->getSchedule()->getStartTime().c_str());
+    printf("Sala: %d\n", reservation->getRoom()->getNumber());
+    printf("Cantidad de Asientos: %d\n", reservation->getSeatCount());
+
+    float totalCost = calculateTotalCost(reservation);
+    printf("Costo Total: $%.2f\n", totalCost);
+
+    printf("\nGracias por su compra!\n");
+    printf("NUEVA CINEMA - Su cine de confianza\n");
+
+    system("pause");
+}
+
+float Cinema::calculateTotalCost(Reservation* reservation) {
+    float ticketPrice = reservation->getRoom()->getPrice();
+    int seatCount = reservation->getSeatCount();
+    return ticketPrice * seatCount;
+}
+
+void Cinema::randomTicket(int& ticket) {
     srand(static_cast<unsigned int>(time(0)));
     ticket = rand() % 900 + 100;
 }
 
-int Cinema::getValidatedInput(const char* message){
+int Cinema::getValidatedInput(const char* message) {
     int input;
     while (true) {
         printf("%s", message);

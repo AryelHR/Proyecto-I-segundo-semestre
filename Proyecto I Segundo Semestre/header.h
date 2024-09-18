@@ -12,5 +12,6 @@ using namespace std;
 #include "TheaterRoom.h"
 #include "Shedule.h"
 #include "Reservation.h"
+#include "Format.h"
 #endif
 

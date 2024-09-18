@@ -20,7 +20,7 @@ public:
         ticketNumber = 0;
         seatCount = 0;
     }
-    Reservation(Movie* _movie, TheaterRoom* _room, Schedule* _schedule, int* _row, int* _col, int _seatCount ,int _ticketNumber ) {
+    Reservation(Movie* _movie, TheaterRoom* _room, Schedule* _schedule, int* _row, int* _col, int _seatCount, int _ticketNumber) {
         movie = _movie;
         room = _room;
         schedule = _schedule;
@@ -44,6 +44,7 @@ public:
     Schedule* getSchedule() const { return schedule; }
     int* getRow() const { return row; }
     int* getCol() const { return col; }
+    int getSeatCount() const { return seatCount; }
     int getTicketNumber() const { return ticketNumber; }
 
     void displayReservation() {
@@ -60,4 +61,3 @@ public:
         room->displaySeats();
     }
 };
-

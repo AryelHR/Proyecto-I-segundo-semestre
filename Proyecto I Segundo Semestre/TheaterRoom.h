@@ -37,6 +37,7 @@ public:
 	bool reserveSeat(int row, int col);
 	void displaySeats() const;
 	bool isSeatAvailable(int row, int col) const;
+	bool isValid() const;
 
 };
 

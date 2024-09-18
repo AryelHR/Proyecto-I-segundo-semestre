@@ -40,7 +40,7 @@ void TheaterRoom::setCols(int _cols) { cols = _cols; }
 int TheaterRoom::getCols() const { return cols; }
 
 
-void TheaterRoom::initializeNullSeats(){
+void TheaterRoom::initializeNullSeats() {
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols;j++) {
             seats[i][j] = 0;
@@ -49,11 +49,11 @@ void TheaterRoom::initializeNullSeats(){
 }
 
 void TheaterRoom::initializeRandomSeats() {
-    srand((unsigned)time(0));  
+    srand((unsigned)time(0));
 
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
-            if (rand() % 2 == 0) {  
+            if (rand() % 2 == 0) {
                 seats[i][j] = 'R';
             }
             else {
@@ -80,10 +80,10 @@ void TheaterRoom::displaySeats() const {
                 printf("[ ]");
             }
             else if (seats[i][j] == 'A') {
-                printf("\033[32m[ ]\033[0m ");  
+                printf("\033[32m[ ]\033[0m ");
             }
             else if (seats[i][j] == 'R') {
-                printf("\033[31m[X]\033[0m ");  
+                printf("\033[31m[X]\033[0m ");
             }
             else if (seats[i][j] == 'I') {
                 printf("\033[33m[O]\033[0m ");
@@ -99,4 +99,9 @@ bool TheaterRoom::isSeatAvailable(int row, int col) const {
         return seats[row][col] == 'A';
     }
     return false;
+}
+
+bool TheaterRoom::isValid() const
+{
+    return number > 0 && seatCount > 0 && price > 0.0 && rows > 0 && cols > 0;
 }
